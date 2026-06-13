@@ -1,4 +1,4 @@
-fetch('predicciones.xlsx')
+fetch('predicciones.xlsx?v=' + Date.now())
     .then(res => res.arrayBuffer())
     .then(buffer => {
         const data = new Uint8Array(buffer);
